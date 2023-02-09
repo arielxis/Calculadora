@@ -43,19 +43,24 @@ function executarEquacao(){
 function ligarNoite() {
     
     //seleciona o [x] checkbox e guarda na variável "noite"
-    let noite = document.getElementById('check-noturno');
+    let checkNoite = document.getElementById('check-noturno');
+    let btnNoite = document.getElementById('btn-noite');
 
-    //selecionar os elementos que quero mudar a cor
+    //seleciona #geral
     let fundo = document.getElementById('geral');
 
-    
-    if (noite.checked == true){//SE check-noturno = false (não está marcado) [x], então será modo noturno
 
+    if (checkNoite.checked == true){//SE check-noturno = false (não está marcado) [x]...
+        
+        //então adiciona a classe "modo-noturno" em #geral
         fundo.classList.add('modo-noturno');
+        btnNoite.innerHTML = 'Dia';
 
-    } else { //SE NÃO (false), não está marcado [ ], então tira o modo noturno
-
+    } else { //SE NÃO (false), não está marcado [ ]...
+        
+        // então tira a classe "modo-noturno" em #geral
         fundo.classList.remove('modo-noturno');
+        btnNoite.innerHTML = 'Noite';
     
     }
 

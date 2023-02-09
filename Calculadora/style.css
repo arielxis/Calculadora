@@ -132,7 +132,8 @@ li p{
 
 /*----------- modo noturno ------*/
 
-#btn-noite{/* criar botão noturno */
+#btn-noite{
+    /* criar botão noturno */
     text-align:center;
     position: fixed;
     top: 30px; left:10px;
@@ -142,14 +143,17 @@ li p{
 }
 
 .modo-noturno{
-        background-color:rgb(52, 52, 52) !important;
+    /* cor do fundo geral */
+    background-color:rgb(52, 52, 52) !important;
 }
 
 .modo-noturno #calculadora{
+    /* se .modo-noturno está ativado, esse muda o fundo em #calculadora */
     background-color: #0aa9a3;
     border-color: #fff;
 }
 
+/* muda botões de numeros*/
 .modo-noturno .botao{
     background-color: #fff;
     color: #0aa9a3;
@@ -163,6 +167,7 @@ li p{
     color: #fff;
 }
 
+/* muda botões de operações */
 .modo-noturno .operacao, .modo-noturno .btn-2{
     background-color: #36ca9e;
     color: #fff;
